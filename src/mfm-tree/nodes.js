@@ -10,6 +10,7 @@ import { Spin } from "./spin.js";
 import { Jelly } from "./jelly.js";
 import { Tada } from "./tada.js";
 import { Jump } from "./jump.js";
+import { Bounce } from "./bounce.js";
 import { Scale } from "./scale.js";
 import { VMove } from "./vmove.js";
 import { HMove } from "./hmove.js";
@@ -27,6 +28,7 @@ export default {
   Jelly,
   Tada,
   Jump,
+  Bounce,
   Scale,
   VMove,
   HMove
