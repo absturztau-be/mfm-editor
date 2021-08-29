@@ -4,7 +4,7 @@
   "description": "editor for mfm art",
   "main": "src/index.js",
   "author": "puniko <me@absturztau.be>",
-  "license": "AGPL3",
+  "license": "AGPL-3.0-or-later",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@imengyu/vue3-context-menu": "^1.0.8",
