@@ -11,6 +11,8 @@ import { Jelly } from "./jelly.js";
 import { Tada } from "./tada.js";
 import { Jump } from "./jump.js";
 import { Bounce } from "./bounce.js";
+import { Shake } from "./shake.js";
+import { Twitch } from "./twitch.js";
 import { Scale } from "./scale.js";
 import { VMove } from "./vmove.js";
 import { HMove } from "./hmove.js";
@@ -29,6 +31,8 @@ export default {
   Tada,
   Jump,
   Bounce,
+  Shake,
+  Twitch,
   Scale,
   VMove,
   HMove
