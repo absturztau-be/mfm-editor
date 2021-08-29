@@ -13,6 +13,7 @@ import { Jump } from "./jump.js";
 import { Bounce } from "./bounce.js";
 import { Shake } from "./shake.js";
 import { Twitch } from "./twitch.js";
+import { Rainbow } from "./rainbow.js";
 import { Scale } from "./scale.js";
 import { VMove } from "./vmove.js";
 import { HMove } from "./hmove.js";
@@ -33,6 +34,7 @@ export default {
   Bounce,
   Shake,
   Twitch,
+  Rainbow,
   Scale,
   VMove,
   HMove

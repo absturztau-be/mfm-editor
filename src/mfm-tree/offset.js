@@ -25,9 +25,6 @@ export function Offset () {
       mfm += "\\)";
     }
     mfm += "[content]";
-    if (this.params.x !== 0 || this.params.y !== 0) {
-      mfm += "\n";
-    }
     return mfm;
   }
 };
