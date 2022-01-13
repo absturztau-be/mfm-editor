@@ -10,7 +10,7 @@ export function Flip () {
     vertical: false
   };
 
-  this.script = () => {
+  this.script = (sub) => {
     let mfm = "$[flip";
     const params = [];
     if (this.params.horizontal) {
@@ -22,9 +22,9 @@ export function Flip () {
     if (params.length > 0) {
       mfm += "." + params.join(",");
     } else {
-      return "[content]";
+      return sub;
     }
-    return mfm + " [content]]";
+    return mfm + " " + sub +"]";
   };
 };
 

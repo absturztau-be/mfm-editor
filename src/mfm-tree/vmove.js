@@ -10,7 +10,7 @@ export function VMove () {
     speed: 1
   };
 
-  this.script = function () {
+  this.script = function (sub) {
     return "$[spin.speed="
       + this.params.speed
       + "s $[spin.left,speed="
@@ -19,7 +19,9 @@ export function VMove () {
       + this.params.distance
       + "mu}\\)$[spin.speed="
       + this.params.speed
-      + "s [content]]]\\(\\hspace{"
+      + "s "
+      + sub
+      + "]]\\(\\hspace{"
       + this.params.distance
       + "mu}\\)]";
   };

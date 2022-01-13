@@ -10,7 +10,7 @@ export function Offset () {
     y: 0
   };
 
-  this.script = () => {
+  this.script = (sub) => {
     let mfm = "";
     if (this.params.x !== 0 || this.params.y !== 0) {
       mfm += "\\(";
@@ -24,7 +24,7 @@ export function Offset () {
     if (mfm.length > 0) {
       mfm += "\\)";
     }
-    mfm += "[content]";
+    mfm += sub;
     return mfm;
   }
 };

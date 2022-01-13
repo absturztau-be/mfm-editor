@@ -7,8 +7,8 @@ export function Center () {
 
   this.params = {};
 
-  this.script = function () {
-    return "\n<center>[content]</center>";
+  this.script = function (sub) {
+    return "\n<center>" + sub + "</center>";
   }
 };
 

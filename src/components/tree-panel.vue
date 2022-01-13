@@ -31,7 +31,7 @@ import { Tree, Fold, Draggable } from "he-tree-vue";
 export default {
   name: "TreePanel",
   emits: [
-    "nodeSelect",
+    "node-select",
     "changed"
   ],
   props: [

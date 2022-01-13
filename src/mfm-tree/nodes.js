@@ -1,8 +1,10 @@
 import { Text } from "./text.js";
 import { Link } from "./link.js";
 import { Bold } from "./bold.js";
+import { Italic } from "./italic.js";
+import { Strike } from "./strike.js";
 import { Small } from "./small.js";
-import { LaTeX } from "./latex.js";
+import { KaTeX } from "./katex.js";
 import { Offset } from "./offset.js";
 import { Center } from "./center.js";
 import { Flip } from "./flip.js";
@@ -17,13 +19,16 @@ import { Rainbow } from "./rainbow.js";
 import { Scale } from "./scale.js";
 import { VMove } from "./vmove.js";
 import { HMove } from "./hmove.js";
+import { Search } from "./search.js";
 
 export default {
   Text,
   Link,
   Bold,
+  Italic,
+  Strike,
   Small,
-  LaTeX,
+  KaTeX,
   Offset,
   Center,
   Flip,
@@ -37,5 +42,6 @@ export default {
   Rainbow,
   Scale,
   VMove,
-  HMove
+  HMove,
+  Search
 };

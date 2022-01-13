@@ -7,11 +7,12 @@ export function Link () {
 
   this.params = {
     text: "misskey",
-    href: "https://misskey.io"
+    href: "https://misskey.io",
+    preview: true
   };
 
   this.script = () => {
-    return "[" + this.params.text + "](" + this.params.href + ")";
+    return (this.params.preview ? "" : "?") + "[" + this.params.text + "](<" + this.params.href + ">)";
   };
 }
 

@@ -1,8 +1,9 @@
 <template>
   <div class="property">
     <label>{{ name }}</label>
-    <input type="text" v-if="typeof value !== 'boolean'" :disabled="name.startsWith('#')" v-model="propertyValue"/>
-    <input type="checkbox" v-if="typeof value === 'boolean'" :disabled="name.startsWith('#')" v-model="propertyValue"/>
+    <input v-if="typeof value == 'boolean'" type="checkbox" :disabled="name.startsWith('#')" v-model="propertyValue"/>
+    <textarea v-else-if="typeof value == 'string' && name == 'text'" :disabled="name.startsWith('#')" v-model="propertyValue"/>
+    <input v-else type="text" :disabled="name.startsWith('#')" v-model="propertyValue"/>
   </div>
 </template>
 

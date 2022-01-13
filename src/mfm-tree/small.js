@@ -9,12 +9,12 @@ export function Small() {
     level: 1
   }
 
-  this.script = function () {
+  this.script = function (sub) {
     let smallMark = "<small>";
     for (let i = 1; i < Math.min(this.params.level, 10); i++) {
       smallMark += "<small>";
     }
-    return smallMark + "[content]" + smallMark.replaceAll("<", "</");
+    return smallMark + sub + smallMark.replaceAll("<", "</");
   }
 }
 

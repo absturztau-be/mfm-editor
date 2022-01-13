@@ -7,8 +7,8 @@ export function Jump () {
 
   this.params = {};
 
-  this.script = () => {
-    return "$[jump [content]]";
+  this.script = (sub) => {
+    return "$[jump " + sub + "]";
   };
 }
 

@@ -7,8 +7,8 @@ export function Rainbow () {
 
   this.params = {};
 
-  this.script = () => {
-    return "$[rainbow [content]]";
+  this.script = (sub) => {
+    return "$[rainbow " + sub + "]";
   };
 };
 

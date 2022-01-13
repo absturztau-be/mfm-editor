@@ -7,8 +7,8 @@ export function Bounce () {
 
   this.params = {};
 
-  this.script = () => {
-    return "$[bounce [content]]";
+  this.script = (sub) => {
+    return "$[bounce " + sub + "]";
   };
 };
 
