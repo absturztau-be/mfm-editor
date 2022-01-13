@@ -5,16 +5,10 @@ export function Bold() {
 
   this.text = "Bold Text";
 
-  this.params = {
-    level: 1
-  }
+  this.params = {};
 
-  this.script = function () {
-    let boldMark = "**";
-    for (let i = 1; i < Math.min(this.params.level, 4); i++) {
-      boldMark += "*";
-    }
-    return boldMark + "[content]" + boldMark;
+  this.script = function (sub) {
+    return "<b>" + sub + "</b>";
   }
 }
 

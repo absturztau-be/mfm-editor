@@ -10,7 +10,7 @@ export function HMove () {
     speed: 1
   };
 
-  this.script = function () {
+  this.script = function (sub) {
     return "$[spin.speed="
       + this.params.speed
       + "s \\(\\hspace{"
@@ -21,7 +21,9 @@ export function HMove () {
       + this.params.distance
       + "mu}\\)$[spin.speed="
       + this.params.speed
-      + "s [content]]]]";
+      + "s "
+      + sub
+      + "]]]";
   };
 };
 

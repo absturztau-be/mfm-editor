@@ -9,14 +9,14 @@ export function Scale () {
     factor: 1
   };
 
-  this.script = () => {
+  this.script = (sub) => {
     let x4s = Math.floor(this.params.factor / 6);
     let x4r = this.params.factor % 6
     let x3s = Math.floor(x4r / 4);
     let x3r = x4r % 4
     let x2s = Math.floor(x3r / 2);
 
-    let mfm = "[content]";
+    let mfm = sub;
 
     for(let x4 = 0; x4 < x4s; x4++) {
       mfm = "$[x4 " + mfm + "]";

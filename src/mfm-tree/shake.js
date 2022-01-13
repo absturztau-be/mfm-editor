@@ -9,12 +9,12 @@ export function Shake () {
     speed: 1
   };
 
-  this.script = () => {
+  this.script = (sub) => {
     let mfm = "$[shake";
     if (this.params.speed) {
       mfm += ".speed=" + this.params.speed + "s";
     }
-    return mfm + " [content]]";
+    return mfm + " " + sub + "]";
   };
 }
 

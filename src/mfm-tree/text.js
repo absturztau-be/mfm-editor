@@ -6,7 +6,7 @@ export function Text() {
   this.text = "Text";
 
   this.params = {
-    text: "content"
+    text: "òwó"
   }
 
   this.script = function () {

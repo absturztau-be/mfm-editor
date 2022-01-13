@@ -7,8 +7,8 @@ export function Tada () {
 
   this.params = {};
 
-  this.script = () => {
-    return "$[tada [content]]";
+  this.script = (sub) => {
+    return "$[tada " + sub + "]";
   }
 }
 

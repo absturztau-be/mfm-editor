@@ -14,7 +14,7 @@ export function Spin () {
     pivotY: 0
   };
 
-  this.script = function () {
+  this.script = function (sub) {
     let paramsArray = [];
     if (this.params.axis !== "z") {
       paramsArray.push(this.params.axis);
@@ -33,7 +33,7 @@ export function Spin () {
     if (this.params.pivotX < 0) {
       baseSpin += "\\(\\hspace{" + Math.abs(this.params.pivotX) + "mu}\\)";
     }
-    baseSpin += "[content]";
+    baseSpin += sub;
     if (this.params.pivotX > 0) {
       baseSpin += "\\(\\hspace{" + Math.abs(this.params.pivotX) + "mu}\\)";
     }

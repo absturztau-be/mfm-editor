@@ -2,19 +2,13 @@ export function Node () {
   this.text = "Node";
   this.children = [];
   this.params = {};
-  this.script = function () {
-    return "[content]";
-  };
+  this.script = (sub) => sub || "ówò";
 }
 
 Node.prototype.generate = function () {
-  let sub = "";
-  for (const child of this.children) {
-    sub += child.generate();
-  }
-  if (sub.length === 0) 
-  {
-    return this.script();
-  }
-  return this.script().replace("[content]", sub);
+  return this.script(
+    this.children
+      .map(child => child.generate())
+      .join('')
+  );
 };
